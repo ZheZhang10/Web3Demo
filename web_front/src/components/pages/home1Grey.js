@@ -2,7 +2,7 @@ import React from 'react';
 import SliderCarouselSingleRedux from '../components/SliderCarouselSingleRedux';
 import FeatureBox from '../components/FeatureBox';
 import CarouselCollectionRedux from '../components/CarouselCollectionRedux';
-import ColumnNewRedux from '../components/ColumnNewRedux';
+// import ColumnNewRedux from '../components/ColumnNewRedux';
 import AuthorListRedux from '../components/AuthorListRedux';
 import Footer from '../components/footer';
 import Reveal from 'react-awesome-reveal';
@@ -30,21 +30,21 @@ const theme = 'GREY'; //LIGHT, GREY, RETRO
 const homethree= () => (
   <div className="greyscheme">
   <StyledHeader theme={theme} />
-      <section className="jumbotron no-bg" style={{backgroundImage: `url(${'./img/background/7.jpg'})`}}>
+      <section className="jumbotron no-bg" style={{backgroundImage: `url(${'./img/background/4.jpg'})`}}>
         <div className='container'>
           <div className='row align-items-center'>
             <div className='col-lg-6'>
                 <div className="spacer-single"></div>
                 <Reveal className='onStep' keyframes={fadeInUp} delay={0} duration={600} triggerOnce>
-                <h6 className=""><span className="text-uppercase color">YuanDianGongZhen Market</span></h6>
+                <h6 className=""><span className="text-uppercase color">YuanDian Creation</span></h6>
                 </Reveal>
                 <div className="spacer-10"></div>
                 <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
-                <h1 className="">Create, sell or collect digital items.</h1>
+                <h1 className="">Best platform for creators</h1>
                 </Reveal>
                 <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
                 <p className=" lead">
-                Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable
+                Realize share and inspire your imagination
                 </p>
                 </Reveal>
                 <div className="spacer-10"></div>
@@ -61,7 +61,7 @@ const homethree= () => (
         </div>
       </section>
 
-      <section className='container'>
+      {/* <section className='container'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-12'>
@@ -70,7 +70,7 @@ const homethree= () => (
         </div>
        <ColumnNewRedux/>
       </div>
-      </section>
+      </section> */}
 
       <section className='container no-top'>
         <div className='row'>

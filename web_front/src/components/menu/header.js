@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import useOnclickOutside from "react-cool-onclickoutside";
 import auth from '../../core/auth';
+import { Nav } from "react-bootstrap";
 
 
 setDefaultBreakpoints([
@@ -206,14 +207,10 @@ const Header = function({ className }) {
                               <NavLink to="/Profile/1" onClick={() => btn_icon(!showmenu)}>Profile</NavLink>
                               <NavLink to="/AuthorGrey/1" onClick={() => btn_icon(!showmenu)}>Author Grey</NavLink>
                               <NavLink to="/AuthorOpensea" onClick={() => btn_icon(!showmenu)}>Author OpenSea</NavLink>
-                              <NavLink to="/wallet" onClick={() => btn_icon(!showmenu)}>Wallet</NavLink>
                               <NavLink to="/walletGrey" onClick={() => btn_icon(!showmenu)}>Wallet Grey</NavLink>
                               <NavLink to="/create" onClick={() => btn_icon(!showmenu)}>Create</NavLink>
                               <NavLink to="/create2" onClick={() => btn_icon(!showmenu)}>Create 2</NavLink>
                               <NavLink to="/createOptions" onClick={() => btn_icon(!showmenu)}>Create options</NavLink>
-                              <NavLink to="/mint" onClick={() => btn_icon(!showmenu)}>Nft Minting</NavLink>
-                              <NavLink to="/minter" onClick={() => btn_icon(!showmenu)}>Nft Minting Grey</NavLink>
-                              <NavLink to="/news" onClick={() => btn_icon(!showmenu)}>News</NavLink>
                               <NavLink to="/works" onClick={() => btn_icon(!showmenu)}>Gallery</NavLink>
                               <NavLink to="/login" onClick={() => btn_icon(!showmenu)}>login</NavLink>
                               <NavLink to="/loginTwo" onClick={() => btn_icon(!showmenu)}>login 2</NavLink>
@@ -255,7 +252,8 @@ const Header = function({ className }) {
                             <div className='item-dropdown'>
                               <div className="dropdown" onClick={closeMenu}>
                                 <NavLink to="/">Homepage</NavLink>
-                                
+                                {/* <NavLink to= "/create">Create</NavLink>
+                                <NavLink to= "/create2">Create 2</NavLink> */}
                               </div>
                             </div>
                           )}
