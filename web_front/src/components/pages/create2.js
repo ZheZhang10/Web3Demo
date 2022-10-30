@@ -9,13 +9,13 @@ const { CheckableTag } = Tag;
 
 // color, env, materials, objects, styles
 const count = 3;
-const envUrl = 'http://71.26.5.150:10401/keyword/?type=effect_geometry&num=5';
-const colorUrl = 'http://71.26.5.150:10401/keyword/?type=effect_color&num=5'
-const materialsUrl = 'http://71.26.5.150:10401/keyword/?type=manifestations&num=5'
-const objectsUrl = 'http://71.26.5.150:10401/keyword/?type=objects&num=5'
-const stylesUrl = 'http://71.26.5.150:10401/keyword/?type=styles_artists&num=5'
-const lightUrl = 'http://71.26.5.150:10401/keyword/?type=effect_lighting&num=5'
-const viewUrl = 'http://71.26.5.150:10401/keyword/?type=effect_perspective&num=5'
+const envUrl = 'http://185.46.222.81:4501/keyword/?type=effect_geometry&num=5';
+const colorUrl = 'http://185.46.222.81:4501/keyword/?type=effect_color&num=5'
+const materialsUrl = 'http://185.46.222.81:4501/keyword/?type=manifestations&num=5'
+const objectsUrl = 'http://185.46.222.81:4501/keyword/?type=objects&num=5'
+const stylesUrl = 'http://185.46.222.81:4501/keyword/?type=styles_artists&num=5'
+const lightUrl = 'http://185.46.222.81:4501/keyword/?type=effect_lighting&num=5'
+const viewUrl = 'http://185.46.222.81:4501/keyword/?type=effect_perspective&num=5'
 // const resultImg = {"image0":"http://71.26.5.150:10402/ipfs/QmV8Pww4G9EjKtB6jGnaicMjtNijd5sqPdXbWCE9zC3nwV","image1":"http://71.26.5.150:10402/ipfs/QmPSMk1FDH1EHHNPbi1EW8Drf6JoHbZqKGBHeLy2U1dXJz","image2":"http://71.26.5.150:10402/ipfs/QmdQPPoLfJcbSyQzg25ZFEmomw3C8jPh3RUQ4sz5bu8LR3","image3":"http://71.26.5.150:10402/ipfs/QmfMDGq8fhHswJgAbhqW3fiJZSsgwF9wNDjQDpsqF3CQSD"}
 
 const Create2 = () => {
@@ -523,12 +523,12 @@ const Create2 = () => {
     
     // const getImg = (finalPrompt) => {    
     //     console.log("calling api, waiting")
-    //     fetch('http://71.26.5.150:10401/download/'+ finalPrompt)
+    //     fetch('http://185.46.222.81:4501/download/'+ finalPrompt)
     //         .then(response => setResultImg(response.json()))
     //         .then(image0 => console.log(image0));
 
     // }
-    const imgUrl = "http://71.26.5.150:10401/download/"+ finalPrompt;
+    const imgUrl = "http://185.46.222.81:4501/download/"+ finalPrompt;
     const getImg = () => {
         console.log("calling api, waiting")
         fetch(imgUrl)
