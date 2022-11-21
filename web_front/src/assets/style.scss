@@ -715,6 +715,7 @@ a{
 /* dropdown */
   .dropdown-custom.btn{
     font-size: 14px;
+    color: #fff;
     border: 0px;
     position: relative;
     top: -1px;
@@ -746,7 +747,7 @@ a{
   .dropdown-toggle::after{
     font-family: FontAwesome;
     content: "\f078";
-    color: rgba(0, 0, 0, .5);
+    color: rgba(250, 250, 250, 0.959);
     padding-left: 2px;
     font-size: 8px;
     top: -1px;
@@ -765,7 +766,7 @@ a{
     padding: 0 0;
     animation: smoothDrop .2s ease;
     -webkit-animation: smoothDrop .2s ease;
-    box-shadow: 2px 2px 30px 0px rgba(20, 20, 20, 0.1);
+    box-shadow: 2px 2px 30px 0px rgb(255, 255, 255);
     z-index: 1;
     .dropdown{
       position: relative;
@@ -820,7 +821,7 @@ a{
         color: $black;
       }
       .btn{
-        color: $black;
+        color: $white;
         .lines{
           top: 24px;
         }
@@ -3395,7 +3396,13 @@ i.font60 {
     margin-right: 20px;
     font-weight: 600;
 }
-
+// .example_center{
+//   text-align: center;
+//   background: #ff0042;
+//   position: absolute;;
+//   left: 30%;
+//   right: 30%;
+// }
 
 @import '~antd/dist/antd.css';
 .site-tag-plus {
@@ -3416,6 +3423,240 @@ i.font60 {
   }
 
 
+// home page
+.Branding_Page_1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // flex-grow: 0;
+  // padding: 0 0 112px;
+  background-color: #111;
+  justify-content: center;
+  align-items: center;
+}
+
+.radial-gradient {
+  width: 1044px;
+  height: 620px;
+  // flex-grow: 0;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;       
+  justify-content: center;  
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px); 
+  // padding-left: 10%;
+  // padding-right: 10%;
+  // margin: 24px 55px 24px 22px;
+  // padding: 0 1px 0 3px;
+  border-radius: 30px;
+  background-color: #141213;
+  background-image: radial-gradient(closest-side, rgb(192, 46, 16), rgba(235, 105, 78, 0)), radial-gradient(closest-side, rgb(12, 169, 137), rgba(243, 11, 164, 0)), radial-gradient(closest-side, rgb(19, 174, 164), rgba(254, 234, 131, 0)), radial-gradient(closest-side, rgb(234, 135, 7), rgba(170, 142, 245, 0));
+  background-size: 130vw 130vh, 120vw 120vh, 100vw 150vh, 120vw 130vh;
+  background-position: -80vw -80vh, 30vw -20vh, -20vw 20vh, 30vw 20vh;
+  background-repeat: no-repeat;
+  animation: 15s moiveAnimation infinite;
+}
+
+@keyframes moiveAnimation {
+  0%,
+  100% {
+      background-size: 130vw 130vh, 120vw 120vh, 100vw 150vh, 120vw 130vh;
+      background-position: -80vw -80vh, 30vw -20vh, -20vw 20vh, 30vw 20vh;
+  }
+  25% {
+      background-size: 120vw 120vh, 130vw 150vh, 130vw 120vh, 100vw 110vh;
+      background-position: -30vw -30vh, 40vw -10vh, 0vw 10vh, -10vw 20vh;
+  }
+  50% {
+      background-size: 130vw 130vh, 140vw 100vh, 100vw 150vh, 90vw 110vh;
+      background-position: 10vw -60vh, 20vw 10vh, 10vw 30vh, 10vw -20vh;
+  }
+  75% {
+      background-size: 140vw 140vh, 100vw 130vh, 100vw 150vh, 130vw 110vh;
+      background-position: -70vw -70vh, 0vw -10vh, 30vw -20vh, 20vw 30vh;
+  }
+} 
+
+.Make-Valuable-Inspirations-Value-More {
+  width: 595px;
+  height: 178px;
+  margin: 255px 420px 111px 25px;
+  text-shadow: 3px 4px 4px rgba(43, 42, 42, 0.25);
+  font-family: Spartan;
+  font-size: 44px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+/* Card */
+.main-card {
+  
+  background-color: #ffc700;
+  height: 20rem;
+  width: 13rem;
+  // margin: 6.5rem auto;
+  margin-left: 40rem;
+  border-radius: 15px;
+  padding: 1.5rem 1.6rem 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  transform: rotate(-18deg);
+}
+
+/* Main Image */
+.image-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.main-image {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.image-container:hover .overlay + .view {
+  display: block;
+}
+
+/* Main Content */
+.card_title {
+  color: hsl(0, 3%, 13%);
+  margin: 1.4rem 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.description {
+  font-size: 0.8rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1rem;
+  font-weight: 150;
+}
+
+.eth-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 1.4rem;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+/* Creator Info */
+.creator-info {
+  display: flex;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.avatar {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 2rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.creator-text {
+  font-weight: 300;
+}
+
+.creator-name {
+  color: hsl(0, 0%, 100%);
+}
+
+.title:hover,
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/* Footer Section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 300px) {
+  .eth-info {
+    flex-direction: column;
+  }
+}
+
+.card_home_1{
+  width: 232px;
+  height: 295px;
+  flex-grow: 0;
+  margin: 63px 218px 186px 21.6px;
+  padding: 12px 41px 20px 11px;
+  transform: rotate(-18deg);
+  border-radius: 10px;
+  background-color: #cd700c;
+}
 
 /*** item details ***/
 .item_info{
@@ -4861,7 +5102,7 @@ blockquote {
   a{
     text-align: center;
     color: #fff !important;
-    background: #8364E2;
+    background: #484141;
     border-radius: 6px;
     letter-spacing: normal;
     outline: 0;

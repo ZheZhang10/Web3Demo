@@ -854,6 +854,10 @@ const Create2 = () => {
                     <h7>***After clicking button, please wait the images to come out!! It may take couple of minutes</h7>
 
                     <div className="spacer-20"></div>
+
+                    {/* example for tim */}
+                    <div className="example_center">example</div>
+
                     <div>Click to enlarge</div>
                     <Image.PreviewGroup>
                         <Image 
@@ -861,7 +865,7 @@ const Create2 = () => {
                         src= {resultImg.image0}/>
                         <Image
                         width={300}
-                        src={resultImg.image1}
+                        src={resultImg.image1}  
                         />
                         <Image
                         width={300}
