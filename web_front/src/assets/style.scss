@@ -111,6 +111,7 @@ section{
   display: block;
   overflow: hidden;
   width: 100%;
+  // height: auto;
   .wraperitem{
     width: 100%;
     height: 100%;
@@ -805,7 +806,7 @@ a{
 /*navbar*/
 .navbar {
     padding: 0;
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -817,6 +818,7 @@ a{
     z-index: 999;
     transition: all 0.6s ease;
     &.white{
+      background: #111;
       a{
         color: $black;
       }
@@ -1498,6 +1500,59 @@ a{
     box-shadow: none;
     transition: all 0.3s ease;
   }
+}
+.img_home_card_1{
+  width: 80px;
+  height: 55px;
+  // margin-right: 50%;
+  // margin-top:30%;
+}
+
+swiper style
+.mySwiper{
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    overflow: hidden;
+  // width: 1600px;
+  // height: 1600px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  // width: 1400px;
+  // height: 1400px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* icon scroll */
@@ -3424,9 +3479,35 @@ i.font60 {
 
 
 // home page
+.slide_1{
+  // margin-top: 0;
+    width: 100%; 
+    height: 100%;
+    // height: 800px;
+    // background: #0f0f0f;
+}
+
+.slide_2{
+  width: 100%; 
+  height: 100%;
+    // height: 800px; 
+  // background: #882020;
+}
+.slide_3{
+  width: 100%; 
+  height: 100%;
+    // height: 800px; 
+  // background: #129138;
+}
+.slide_4{
+  width: 100%;
+  height: 100%; 
+    // height: 800px; 
+  background: #9f860a;
+}
 .Branding_Page_1 {
   width: 100%;
-  height: 100%;
+  height: 35%;
   display: flex;
   // flex-grow: 0;
   // padding: 0 0 112px;
@@ -3434,15 +3515,32 @@ i.font60 {
   justify-content: center;
   align-items: center;
 }
+.page2{
+  width: 100%;
+  height: 34%;
+  display: flex;
+  background-color: #111;
+  justify-content: center;
+  align-items: center;
+
+}
+.page3{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background-color: #111;
+  justify-content: center;
+  align-items: center;
+}
 
 .radial-gradient {
-  width: 1044px;
-  height: 620px;
+  width: 1000px;
+  height: 580px;
   // flex-grow: 0;
   margin-top: 8%;
   display: flex;
-  flex-direction: column;       
-  justify-content: center;  
+  flex-direction: row;       
+  justify-content: left;  
   -webkit-backdrop-filter: blur(80px);
   backdrop-filter: blur(80px); 
   // padding-left: 10%;
@@ -3456,6 +3554,82 @@ i.font60 {
   background-position: -80vw -80vh, 30vw -20vh, -20vw 20vh, 30vw 20vh;
   background-repeat: no-repeat;
   animation: 15s moiveAnimation infinite;
+}
+
+
+// slider 1 page element
+.card_home_1{
+  display: flex;
+  width: 452px;
+  height: 385px;
+  margin: 63px 80px 386px 0px;
+  // flex-grow: 1;
+
+  transform: rotate(18deg);
+  // border-radius: 10px;
+}
+.text_home_1{
+  width: 595px;
+  height: 178px;
+}
+
+// slider 2 page selement
+.page2_left_img{
+  display: flex;
+  
+}
+.page2_right_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.Get-to-Know-About-us {
+  width: 294px;
+  height: 54px;
+  display: flex;
+  // margin: 154px 251px 0 294px;
+  opacity: 0.8;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffb800;
+}
+.What-is-Tada {
+  width: 371px;
+  height: 68px;
+  display: flex;
+  // margin: 208px 206px 97px 262px;
+  text-shadow: 3px 4px 4px rgba(43, 42, 42, 0.25);
+  font-family: Spartan;
+  font-size: 40px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.What-is-Tada-answer{
+  width: 445px;
+  height: 116px;
+  display: flex;
+  // margin: 97px 94px 59px 300px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
 }
 
 @keyframes moiveAnimation {
@@ -3479,9 +3653,14 @@ i.font60 {
 } 
 
 .Make-Valuable-Inspirations-Value-More {
-  width: 595px;
-  height: 178px;
-  margin: 255px 420px 111px 25px;
+  // width: 595px;
+  // height: 178px;
+  display: flex;
+  margin: 220px 100px 111px 0px;
+  // margin-top: 40%;
+  // margin-left: 2%;
+  // margin-right: 22%;
+  // margin-bottom: 60%;
   text-shadow: 3px 4px 4px rgba(43, 42, 42, 0.25);
   font-family: Spartan;
   font-size: 44px;
@@ -3493,6 +3672,133 @@ i.font60 {
   text-align: center;
   color: #fff;
 }
+
+// slider 3 page element
+.section1234{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section5{
+  margin-top: 20%;
+  display: flex;
+}
+.section12{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+}
+.section34{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.section1{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.section2{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.section3{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.section4{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+// 翻转卡片
+.card_container{
+  -webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+  text-align: center;
+  // position: absolute;
+}
+.front{
+  color:#fff;
+  // border-style: solid;
+  // border-width: 2px;
+  // border-radius: 15px;
+  -webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+}
+  
+.back{
+  color: #fff;
+  -webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+  transform: rotateY(180deg);
+}
+.front, .back{
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // margin: -40% 0 0 -40%;
+  // width: 80%;
+  // height: 300px;
+  backface-visibility: hidden;
+  -webkit-backdrop-filter: blur(80px);
+	backdrop-filter: blur(80px);
+  transition: transform 1s;
+}
+  
+.card_container:hover{
+  .front{
+    transform: rotateY(180deg);
+  }
+  .back{
+    transform: rotateY(0);
+  }
+}
+.large_number{
+  opacity: 0.9;
+  font-family: RadioCanada;
+  font-size: 70px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.large_title{
+  opacity: 0.9;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+
+}
+.feature_detail{
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
 
@@ -3647,16 +3953,6 @@ i.font60 {
   }
 }
 
-.card_home_1{
-  width: 232px;
-  height: 295px;
-  flex-grow: 0;
-  margin: 63px 218px 186px 21.6px;
-  padding: 12px 41px 20px 11px;
-  transform: rotate(-18deg);
-  border-radius: 10px;
-  background-color: #cd700c;
-}
 
 /*** item details ***/
 .item_info{
